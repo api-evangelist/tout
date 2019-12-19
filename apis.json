@@ -1,0 +1,62 @@
+{
+    "name": "Tout",
+    "description": "Online Video Network Delivering News, Sports, and Entertainment Video to Over 25MM Viewers Per Month.",
+    "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/1491-tout.jpg",
+    "tags": [
+        "have api",
+        "social",
+        "updates",
+        "videos"
+    ],
+    "created": "2019-12-19",
+    "modified": "2019-12-19",
+    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/tout\/master\/apis.json",
+    "specificationVersion": "0.14",
+    "apis": [
+        {
+            "name": "Tout",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/1491-tout.jpg",
+            "humanURL": "http:\/\/www.tout.com\/",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-postman-collecction",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/tout-postman-collection.json"
+                }
+            ]
+        }
+    ],
+    "include": [],
+    "x-common": [
+        {
+            "type": "Blog",
+            "url": "http:\/\/blog.tout.com\/"
+        },
+        {
+            "type": "Blog RSS",
+            "url": "http:\/\/blog.tout.com\/rss"
+        },
+        {
+            "type": "Crunchbase",
+            "url": "http:\/\/www.crunchbase.com\/company\/tout"
+        },
+        {
+            "type": "Crunchbase",
+            "url": "https:\/\/crunchbase.com\/organization\/tout"
+        },
+        {
+            "type": "Github",
+            "url": "https:\/\/github.com\/Tout"
+        },
+        {
+            "type": "Twitter",
+            "url": "https:\/\/twitter.com\/tout"
+        },
+        {
+            "type": "Website",
+            "url": "http:\/\/www.tout.com\/"
+        }
+    ]
+}
