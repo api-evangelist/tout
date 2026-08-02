@@ -1,19 +1,40 @@
 aid: tout
+accessModel:
+  pricing: unknown
+  onboarding: approval
+  trial: false
+  try_now: false
+  public: false
+  label: Requires approval
+  confidence: medium
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/tout.png
 name: Tout
-description: Tout is a company surfaced as a portfolio company of 500-global and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Tout (ToutApp) was a sales engagement platform offering email tracking,
+  templates, and analytics for sales teams, and a 500 Global portfolio company. ToutApp
+  was acquired by Marketo in 2017 and became Marketo Sales Connect; toutapp.com now
+  301-redirects to the Marketo Sales Connect product page on business.adobe.com following
+  Adobe's acquisition of Marketo. Tout no longer operates a standalone developer or
+  API surface.
 url: https://raw.githubusercontent.com/api-evangelist/tout/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - 500-global
 x-tier: stub
-x-tier-reason: portfolio-lead
+x-tier-reason: portfolio-lead-acquired-by-marketo
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Sales
+- Sales Engagement
+- Email Tracking
+- Marketing
+- Acquired
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +42,16 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/tout-domain-security.yml
+- type: WellKnown
+  url: well-known/tout-well-known.yml
+- type: LLMsTxt
+  url: llms/tout-llms.txt
 - type: Website
   url: https://toutapp.com
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 3
+  pass: local-v1

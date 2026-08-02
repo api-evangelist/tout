@@ -1,0 +1,20 @@
+generated: '2026-07-21'
+method: searched
+source: live HTTP probes of https://toutapp.com
+host: https://toutapp.com
+note: toutapp.com is a redirect shell (301 -> https://www.marketo.com/software/marketo-sales-connect/
+  -> https://business.adobe.com/products/marketo/sales-connect.html) following the
+  2017 Marketo acquisition of ToutApp; no well-known discovery surface is published.
+documents:
+- path: /.well-known/security.txt
+  status: 404
+- path: /.well-known/openid-configuration
+  status: 404
+- path: /.well-known/oauth-authorization-server
+  status: 404
+- path: /.well-known/api-catalog
+  status: 404
+- path: /.well-known/ai-plugin.json
+  status: 404
+- path: /llms.txt
+  status: 404

@@ -1,0 +1,15 @@
+# Tout
+
+> Tout (ToutApp) was a sales engagement platform — email tracking, templates, and analytics for sales teams — and a 500 Global portfolio company. It was acquired by Marketo in 2017 and became Marketo Sales Connect; toutapp.com now redirects to the Marketo Sales Connect page on business.adobe.com. Tout no longer operates a standalone API or developer surface.
+
+## Company
+
+- [Website (redirects to Adobe/Marketo Sales Connect)](https://toutapp.com)
+
+## APIs
+
+No standalone Tout APIs are published. The historical ToutApp developer surface (api.toutapp.com) is offline.
+
+## Profile
+
+- [APIs.json profile](https://raw.githubusercontent.com/api-evangelist/tout/refs/heads/main/apis.yml)
