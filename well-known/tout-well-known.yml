@@ -3,18 +3,23 @@ method: searched
 source: live HTTP probes of https://toutapp.com
 host: https://toutapp.com
 note: toutapp.com is a redirect shell (301 -> https://www.marketo.com/software/marketo-sales-connect/
-  -> https://business.adobe.com/products/marketo/sales-connect.html) following the
-  2017 Marketo acquisition of ToutApp; no well-known discovery surface is published.
-documents:
-- path: /.well-known/security.txt
-  status: 404
-- path: /.well-known/openid-configuration
-  status: 404
-- path: /.well-known/oauth-authorization-server
-  status: 404
-- path: /.well-known/api-catalog
-  status: 404
-- path: /.well-known/ai-plugin.json
-  status: 404
-- path: /llms.txt
-  status: 404
+  -> https://business.adobe.com/products/marketo/sales-connect.html) following the 2017 Marketo acquisition
+  of ToutApp; no well-known discovery surface is published.
+hosts:
+- host: https://toutapp.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+x-shape-fix:
+  converted: '2026-08-20'
+  from: documents
+  note: Rewritten into hosts[] -> documents[], the only shape well_known_docs() in score.rb reads. A served
+    .well-known surface recorded in any other shape scores as absent.
